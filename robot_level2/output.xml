@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20231027 16:10:23.712" rpa="true" schemaversion="4">
+<suite id="s1" name="Tasks" source="c:\Users\zahra.firdausi\Desktop\robot_level2\tasks.robot">
+<test id="s1-t1" name="Minimal task" line="7">
+<kw name="Order Robots From RobotSpareBin" library="tasks">
+<msg timestamp="20231027 16:10:36.093" level="INFO">Opening browser 'firefox' to base url 'https://robotsparebinindustries.com/#/robot-order'.</msg>
+<msg timestamp="20231027 16:11:11.694" level="INFO">Clicking button 'OK'.</msg>
+<msg timestamp="20231027 16:11:12.122" level="INFO">Creating a new HTTP session</msg>
+<msg timestamp="20231027 16:11:12.122" level="INFO">Creating Session using : alias=rpasession_alias.httpsrobotsparebinindustries.com, url=https://robotsparebinindustries.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<msg timestamp="20231027 16:11:25.317" level="INFO">PY Log: Try fill the row</msg>
+<msg timestamp="20231027 16:11:27.155" level="INFO">Selecting options from selection list '//select[@id="head"]' by value 1.</msg>
+<msg timestamp="20231027 16:11:27.734" level="INFO">PY Log: Finish 1. Fill head</msg>
+<msg timestamp="20231027 16:11:32.781" level="INFO">Selecting '2' from radio button 'body'.</msg>
+<msg timestamp="20231027 16:11:33.126" level="INFO">PY Log: Finish 2. Fill body</msg>
+<msg timestamp="20231027 16:11:38.162" level="INFO">Typing text '3' into text field 'class:form-control'.</msg>
+<msg timestamp="20231027 16:11:38.337" level="INFO">Typing text '3' into text field 'class:form-control'.</msg>
+<msg timestamp="20231027 16:11:38.486" level="INFO">PY Log: Finish 3. Fill Legs</msg>
+<msg timestamp="20231027 16:11:43.498" level="INFO">Typing text 'Address 123' into text field 'address'.</msg>
+<msg timestamp="20231027 16:11:43.516" level="INFO">Typing text 'Address 123' into text field 'address'.</msg>
+<msg timestamp="20231027 16:11:43.559" level="INFO">Open Browser Success
+Downloading excel file Success
+Read CSV Success
+failed fill the row</msg>
+<msg timestamp="20231027 16:11:43.561" level="FAIL">Element with locator 'receipt' not found.</msg>
+<status status="FAIL" starttime="20231027 16:10:36.092" endtime="20231027 16:11:43.572"/>
+</kw>
+<status status="FAIL" starttime="20231027 16:10:36.078" endtime="20231027 16:11:43.644">Element with locator 'receipt' not found.</status>
+</test>
+<doc>Template robot main suite.</doc>
+<status status="FAIL" starttime="20231027 16:10:23.816" endtime="20231027 16:11:43.880"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
